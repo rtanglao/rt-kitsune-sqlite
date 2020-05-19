@@ -10,7 +10,7 @@ curl https://raw.githubusercontent.com/rtanglao/rt-kits-api2/master/2020BYMONTH/
  > april2020-ff-desktop-aaq-questions.csv
 ```
 
-* 2\. use a text editor and change ' -0800' to '-0800' (remove space)
+* 2\. <del>use a text editor and change ' -0800' to '-0800' (remove space)</del> - actually you don't need to do this, just add " %Z" in step 3
 * 3\. generate the database
 ```bash
 csvs-to-sqlite -dt created -df "%Y-%m-%d %H:%M:%S %Z" april2020-ff-desktop-aaq-questions.csv april2020-ff-desktop-aaq-questions.db
